@@ -1,7 +1,20 @@
 const path = require("node:path");
 const sass = require("sass");
 
+
+//CONFIG VIA NAMED EXPORT
+module.exports.config = {
+	dir: {
+		input: "code",
+		"output": "docs"
+	}
+};
+
+//CONFIG VIA METHOD
 module.exports = function (eleventyConfig) {
+
+	//SASS
+
 	eleventyConfig.addExtension("scss", {
 		outputFileExtension: "css",
 
