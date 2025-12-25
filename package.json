@@ -1,11 +1,13 @@
 {
   "name": "refugioweb",
   "version": "1.0.0",
+  "type":"module",
   "description": "Official Jose Kastelic Cabin Website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx @11ty/eleventy --formats=scss --serve",
+    "build": "npx @11ty/eleventy --formats=scss",
     "clean": "rm -rf docs"
   },
   "keywords": [],

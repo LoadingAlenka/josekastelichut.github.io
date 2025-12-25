@@ -1,20 +1,18 @@
-const path = require("node:path");
-const sass = require("sass");
-
-
-//CONFIG VIA NAMED EXPORT
-module.exports.config = {
-	dir: {
-		input: "code",
-		"output": "docs"
-	}
-};
+import path from "node:path";
+import * as sass from "sass";
 
 //CONFIG VIA METHOD
-module.exports = function (eleventyConfig) {
 
+export default function (eleventyConfig) {
+
+	//COPIAR Y PEGAR CARPETAS A DOCS
+	eleventyConfig.addPassthroughCopy("code/css");
+	eleventyConfig.addPassthroughCopy("code/fonts");
+	eleventyConfig.addPassthroughCopy("code/img");
+	eleventyConfig.addPassthroughCopy("code/js");
+	eleventyConfig.addPassthroughCopy("code/pdf");
+	
 	//SASS
-
 	eleventyConfig.addExtension("scss", {
 		outputFileExtension: "css",
 
@@ -43,4 +41,14 @@ module.exports = function (eleventyConfig) {
 			};
 		},
 	});
+
+	return {
+		dir: {
+			input: "code",
+			output: "docs",
+			includes: "_includes",
+			data: "_data"
+		}
+	}
+
 };
