@@ -46,9 +46,6 @@ export default function (eleventyConfig) {
 		dir: {
 			input: "code",
 			output: "docs",
-			includes: "_includes",
-			data: "_data"
-		}
-	}
-
+		},
+	};
 };
