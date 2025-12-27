@@ -1,0 +1,8 @@
+@mixin theme-dark {
+  --background: #2f323a;
+  --text: #e4e8f3;
+  --primary: #8aaa79;
+  --secondary: #2c656e;
+  --accent: #d0b947;
+  --color-hover: rgba(255, 255, 255, 0.08);
+}

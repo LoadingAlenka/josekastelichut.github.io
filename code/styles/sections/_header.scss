@@ -1,0 +1,22 @@
+header {
+  background-color: var(--background);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 1;
+  color: var(--primary);
+  padding-top: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.theme-toggle {
+  text-align: center;
+}
