@@ -1,5 +1,20 @@
+{% set currentLocale = page.url.split('/')[1] %}
+
 <header>
-  <div class="logo">Refugio<br>"José Kastelic"</div>
-  {% include "nav.njk" %}
-  <button class="theme-toggle" aria-label="Toggle between themes">🌙</button>
+  <h1>{{ title }}</h1>
+
+  {% set locale = page.url.split('/')[1] %}
+
+  <nav>
+    <ul>
+      {% for key, item in i18n.nav %}
+        <li>
+          <a href="/{{ locale }}/{{ key }}/">
+            {{ item.label[locale] }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
 </header>

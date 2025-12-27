@@ -1,0 +1,67 @@
+INICIO
+├── EL REFUGIO
+│   ├── ¿QUÉ ES EL REFUGIO?
+│   │   ├── Historia
+│   │   ├── Comunidad Eslovena
+│   │   └── ¿Por qué se llama José Kastelic?
+│   │////
+│   ├── UBICACIÓN
+│   │   ├── Mapa
+│   │   ├── Altura y entorno
+│   │   └── Clima y temporada
+│   │
+│   ├── CÓMO LLEGAR
+│   │   ├── Desde Mendoza
+│   │   ├── Transporte público / auto
+│   │   └── Recorrido y atractivos del camino
+│   │
+│   ├── LA ESTANCIA
+│   │   ├── Qué hacer en el refugio
+│   │   ├── Normas y cuidado del refugio
+│   │   ├── Qué llevar (equipo recomendado)
+│   │   └── Capacidad y servicios
+│   │
+│   ├── SEGURIDAD
+│   │   ├── Recomendaciones en montaña
+│   │   ├── Clima extremo
+│   │   └── Contactos de emergencia
+│   │///
+│   └── RESERVAS
+│       ├── Tarifas
+│       ├── Disponibilidad
+│       └── Reglamento
+│
+├── EL ENTORNO
+│   ├── LOS PENITENTES
+│   │   ├── Historia
+│   │   ├── Actividades
+│   │   └── Temporadas
+│   │
+│   ├── MENDOZA
+│   │   ├── Cómo llegar a la zona
+│   │   └── Otras actividades cercanas
+│
+├── ACTIVIDADES
+│   ├── Senderismo
+│   ├── Montañismo
+│   ├── Esquí / invierno
+│   └── Actividades culturales
+│
+├── GALERÍA
+│   ├── Verano
+│   ├── Invierno
+│   └── Historia / archivo
+│
+├── NOTICIAS / NOVEDADES
+│   ├── Estado del refugio
+│   ├── Eventos
+│   └── Comunicados importantes
+│
+├── CONTACTO
+│   ├── Formulario
+│   ├── Redes
+│   └── Cómo colaborar
+│
+└── IDIOMA
+    ├── Español
+    └── Esloveno

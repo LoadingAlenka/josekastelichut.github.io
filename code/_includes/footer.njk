@@ -1,4 +1,10 @@
-{# <footer>
-  <div class="logo">Refugio "José Kastelic"</div>
+<footer>
+{% set pageUrl = page.url.split('/').slice(2).join('/') %}
+
+  <p>{{ 'select_language' | i18n }}:</p>
+  <ul>
+    {% for locale in locales -%}
+      <li><a href="/{{ locale.code }}/{{ pageUrl }}" rel="alternate" hreflang="{{ locale.code }}">{{ locale.label }}</a></li>
+    {% endfor -%}
+  </ul>
 </footer>
- #}
