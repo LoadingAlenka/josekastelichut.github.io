@@ -1,0 +1,31 @@
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: inline-block; /* CLAVE */
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0; /* arranca EXACTO donde empieza el texto */
+  min-width: max-content;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+.nav-item:hover > .submenu,
+.nav-item:focus-within > .submenu {
+  display: block;
+}

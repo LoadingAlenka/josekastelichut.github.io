@@ -1,0 +1,12 @@
+{% set locale = page.url.split('/')[1] %}
+<ul class="lang-switcher">
+  <i class="fi fi-rr-globe"></i>
+  {% for locale in locales -%}
+  <a
+      href="/{{ locale.code }}/{{ pageUrl }}"
+      rel="alternate"
+      hreflang="{{ locale.code }}"
+      >{{ locale.label }}</a
+    >
+  {% endfor -%}
+</ul>

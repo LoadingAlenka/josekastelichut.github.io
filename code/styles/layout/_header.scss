@@ -1,0 +1,60 @@
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: var(--acquaintances) 0 var(--best-friends);
+  z-index: 100;
+
+  transition: padding 0.3s ease, background-color 0.5s ease;
+
+  .logo {
+    font-size: var(--fs-800);
+    font-weight: bold;
+    user-select: none;
+    transition: font-size 0.3s ease, transform 0.3s ease;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: var(--close-friends);
+    width: 100%;
+    transition: margin 0.3s ease;
+
+    ul {
+      display: flex;
+      gap: var(--friends);
+
+      li {
+        list-style: none;
+      }
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      padding: var(--best-friends);
+      transition: padding 0.3s ease;
+    }
+  }
+}
+
+/* ESTADO SCROLL */
+header.shrink {
+  padding: var(--friends) 0 var(--best-friends);
+  backdrop-filter: brightness(20%) blur(2px);
+  -webkit-backdrop-filter: brightness(20%) blur(2px);
+}
+
+header.shrink .logo {
+  font-size: 1.2rem;
+  transform: scale(0.9);
+}
+
+header.shrink nav {
+  margin: var(--best-friends);
+}

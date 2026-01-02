@@ -1,10 +1,25 @@
 <footer>
-{% set pageUrl = page.url.split('/').slice(2).join('/') %}
+  {% set pageUrl = page.url.split('/').slice(2).join('/') %}
 
-  <p>{{ 'select_language' | i18n }}:</p>
-  <ul>
-    {% for locale in locales -%}
-      <li><a href="/{{ locale.code }}/{{ pageUrl }}" rel="alternate" hreflang="{{ locale.code }}">{{ locale.label }}</a></li>
-    {% endfor -%}
-  </ul>
+  <div class="footer-top">
+    <h1 class="logo uppercase">{{"slovenian-hut-jose-kastelic" | i18n }}</h1>
+  </div>
+  <div class="footer-bottom">
+    <div class="copyright">
+      @2026 {{ "slovenian-community-in-mendoza" | i18n}}
+    </div>
+    <div class="social-media">
+      <a
+        href="https://www.instagram.com/drustvoslovencevmendoza/"
+        target="_blank"
+        >Instagram</a
+      >
+      <a href="#" target="_blank">Whatsapp</a>
+      <a
+        href="https://maps.app.goo.gl/Eofnx2vAthXvSV8H8"
+        target="_blank"
+        >Google Maps</a
+      >
+    </div>
+  </div>
 </footer>

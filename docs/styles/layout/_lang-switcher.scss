@@ -1,0 +1,54 @@
+.lang-switcher {
+  position: fixed;
+  top: 10rem;
+  right: 0;
+  z-index: 1000;
+
+  background: var(--color-primary);
+  border-radius: 0.75rem 0 0 0.75rem;
+
+  padding: var(--close-friends);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  transform: translateX(100%);
+  transition: transform var(--transtion-time) ease;
+  transition-delay: 0s;
+
+  -webkit-box-shadow: var(--shadow-spread);
+  box-shadow: var(--shadow-spread);
+}
+
+.lang-switcher:hover {
+  transform: translateX(0);
+  transition-delay: 0s; /* abre inmediato */
+}
+
+.lang-switcher:not(:hover) {
+  transition-delay: 1.5s; /* 👈 tiempo visible */
+}
+
+/* pestañita cuadrada */
+.lang-switcher > i {
+  position: absolute;
+  left: -2.25rem;
+  transform: translateY(50%);
+  width: 2.25rem;
+  height: 2.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--color-primary);
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.lang-switcher > a:hover {
+  color: var(--color-text);
+}

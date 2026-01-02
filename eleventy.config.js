@@ -16,10 +16,16 @@ export default function (eleventyConfig) {
     },
   });
 
+  eleventyConfig.addFilter("i18n", function (key) {
+    const lang = this.page?.lang || "es";
+    return this.ctx.i18n?.[key]?.[lang] || key;
+  });
+
   //COPIAR Y PEGAR CARPETAS A DOCS
-  eleventyConfig.addPassthroughCopy("code/css");
+  eleventyConfig.addPassthroughCopy("code/admin");
   eleventyConfig.addPassthroughCopy("code/fonts");
   eleventyConfig.addPassthroughCopy("code/js");
+  eleventyConfig.addPassthroughCopy("code/media");
   eleventyConfig.addPassthroughCopy("code/en");
   eleventyConfig.addPassthroughCopy("code/es");
   eleventyConfig.addPassthroughCopy("code/sl");

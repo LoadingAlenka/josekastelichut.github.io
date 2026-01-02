@@ -1,162 +1,127 @@
 export default {
-  website: {
-    en: "Website",
-    es: "Sitio web",
-    sl: "Spletna stran",
+  "activities": {
+    "en": "Activities",
+    "es": "Actividades",
+    "sl": "Dejavnosti"
   },
-
-  select_language: {
-    en: "Select language",
-    es: "Seleccione el idioma",
-    sl: "Izberite jezik",
+  "click": {
+    "en": "Click",
+    "es": "Hacer clic",
+    "sl": "Kliknite"
   },
-
-  nav: {
-    homepage: {
-      label: {
-        en: "Homepage",
-        es: "Inicio",
-        sl: "Domov",
-      },
-    },
-
-    the_hut: {
-      label: {
-        en: "The Hut",
-        es: "El Refugio",
-        sl: "Koča",
-      },
-      children: {
-        history: {
-          en: "History",
-          es: "Historia",
-          sl: "Zgodba",
-        },
-        comunity: {
-          en: "Slovenian Comunity in Mendoza",
-          es: "Comunidad Eslovena de Mendoza",
-          sl: "Društvo Slovencev v Mendozi",
-        },
-      },
-    },
-
-    visit: {
-      label: {
-        en: "Visit",
-        es: "Tu visita",
-        sl: "Obisk",
-      },
-      children: {
-        ubication: {
-          label: {
-            en: "Ubication",
-            es: "Ubicación",
-            sl: "Lokacija",
-          },
-          children: {
-            map: {
-              en: "Map",
-              es: "Mapa",
-              sl: "Zemljevid",
-            },
-            geography: {
-              en: "Geography",
-              es: "Geografía",
-              sl: "Geografija",
-            },
-          },
-        },
-
-        how_to_get_there: {
-          en: "How to get there",
-          es: "Cómo llegar",
-          sl: "Kako prispeti",
-        },
-
-        the_stay: {
-          en: "The stay",
-          es: "La estancia",
-          sl: "Bivanje",
-        },
-
-        security: {
-          en: "Security",
-          es: "Seguridad",
-          sl: "Varnost",
-        },
-      },
-    },
-
-    activities: {
-      label: {
-        en: "Activities",
-        es: "Actividades",
-        sl: "Dejavnosti",
-      },
-      children: {
-        hiking: {
-          en: "Hiking",
-          es: "Senderismo",
-          sl: "Hiking",
-        },
-        mountaineering: {
-          en: "Mountaineering",
-          es: "Montañismo",
-          sl: "Gorništvo",
-        },
-        ski: {
-          en: "Ski",
-          es: "Esquí",
-          sl: "Smučanje",
-        },
-        cultural_activities: {
-          en: "Cultural activities",
-          es: "Actividades culturales",
-          sl: "Kulturne dejavnosti",
-        },
-        visit_mendoza: {
-          en: "Visit Mendoza",
-          es: "Visitar Mendoza",
-          sl: "Obiskati Mendozo",
-        },
-      },
-    },
-
-    gallery: {
-      label: {
-        en: "Gallery",
-        es: "Galería",
-        sl: "Galerija",
-      },
-    },
-
-    news: {
-      label: {
-        en: "News",
-        es: "Novedades",
-        sl: "Novice",
-      },
-    },
-
-    contact: {
-      label: {
-        en: "Contact",
-        es: "Contacto",
-        sl: "Kontakt",
-      },
-    },
+  "contact": {
+    "en": "Contact",
+    "es": "Contacto",
+    "sl": "Kontakt"
   },
-
-  actions: {
-    click: {
-      en: "Click",
-      es: "Hacer clic",
-      sl: "Kliknite",
-    },
-    loading: {
-      en: "Loading",
-      es: "Cargando",
-      sl: "Nalaganje",
-    },
+  "cultural-activities": {
+    "en": "Cultural activities",
+    "es": "Actividades culturales",
+    "sl": "Kulturne dejavnosti"
   },
-};
+  "gallery": {
+    "en": "Gallery",
+    "es": "Galería",
+    "sl": "Galerija"
+  },
+  "geography": {
+    "en": "Geography",
+    "es": "Geografía",
+    "sl": "Geografija"
+  },
+  "hiking": {
+    "en": "Hiking",
+    "es": "Senderismo",
+    "sl": "Hiking"
+  },
+  "history": {
+    "en": "History",
+    "es": "Historia",
+    "sl": "Zgodba"
+  },
+  "homepage": {
+    "en": "Homepage",
+    "es": "Inicio",
+    "sl": "Domov"
+  },
+  "how-to-get-there": {
+    "en": "How to get there",
+    "es": "Cómo llegar",
+    "sl": "Kako prispeti"
+  },
+  "loading": {
+    "en": "Loading",
+    "es": "Cargando",
+    "sl": "Nalaganje"
+  },
+  "map": {
+    "en": "Map",
+    "es": "Mapa",
+    "sl": "Zemljevid"
+  },
+  "mountaineering": {
+    "en": "Mountaineering",
+    "es": "Montañismo",
+    "sl": "Gorništvo"
+  },
+  "news": {
+    "en": "News",
+    "es": "Novedades",
+    "sl": "Novice"
+  },
+  "security": {
+    "en": "Security",
+    "es": "Seguridad",
+    "sl": "Varnost"
+  },
+  "select-language": {
+    "en": "Select language",
+    "es": "Seleccione el idioma",
+    "sl": "Izberite jezik"
+  },
+  "ski": {
+    "en": "Ski",
+    "es": "Esquí",
+    "sl": "Smučanje"
+  },
+  "slovenian-community-in-mendoza": {
+    "en": "Slovenian Community in Mendoza",
+    "es": "Comunidad Eslovena de Mendoza",
+    "sl": "Društvo Slovencev v Mendozi"
+  },
+  "slovenian-hut-jose-kastelic": {
+    "en": "Slovenian Hut Jose Kastelic",
+    "es": "Refugio Esloveno José Kastelic",
+    "sl": "Slovenska Koča Jože Kastelic"
+  },
+  "the-hut": {
+    "en": "The Hut",
+    "es": "El Refugio",
+    "sl": "Koča"
+  },
+  "the-stay": {
+    "en": "The stay",
+    "es": "La estancia",
+    "sl": "Bivanje"
+  },
+  "ubication": {
+    "en": "Ubication",
+    "es": "Ubicación",
+    "sl": "Lokacija"
+  },
+  "visit": {
+    "en": "Visit",
+    "es": "Tu visita",
+    "sl": "Obisk"
+  },
+  "visit-mendoza": {
+    "en": "Visit Mendoza",
+    "es": "Visitar Mendoza",
+    "sl": "Obiskati Mendozo"
+  },
+  "website": {
+    "en": "Website",
+    "es": "Sitio web",
+    "sl": "Spletna stran"
+  }
+}

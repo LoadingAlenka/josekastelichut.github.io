@@ -1,20 +1,14 @@
-{% set currentLocale = page.url.split('/')[1] %}
-
+{% set locale = page.url.split('/')[1] %}
 <header>
-  <h1>{{ title }}</h1>
-
-  {% set locale = page.url.split('/')[1] %}
-
+  <div class="logo uppercase">{{"slovenian-hut-jose-kastelic" | i18n }}</div>
   <nav>
-    <ul>
-      {% for key, item in i18n.nav %}
-        <li>
-          <a href="/{{ locale }}/{{ key }}/">
-            {{ item.label[locale] }}
-          </a>
-        </li>
-      {% endfor %}
+    <ul class="menu">
+      <li><a href="">{{ "homepage" | i18n }}</a></li>
+      <li><a href="">{{ "the-hut" | i18n }}</a></li>
+      <li><a href="">{{ "visit" | i18n }}</a></li>
+      <li><a href="">{{ "activities" | i18n }}</a></li>
+      <li><a href="">{{ "gallery" | i18n }}</a></li>
+      <li><a href="">{{ "news" | i18n }}</a></li>
     </ul>
   </nav>
-
 </header>
