@@ -12,13 +12,7 @@ section {
   height: 35rem;
 
   /* fondo épico */
-  background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0.6) 40%,
-      rgba(0, 0, 0, 0.15) 100%
-    ),
-    url("/media/img/hero.jpg"); /* 👈 cambiá la imagen */
+  background: url("/media/img/hero-cutted.jpg"); /* 👈 cambiá la imagen */
   background-size: cover;
   background-position: center;
 
@@ -32,7 +26,6 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.25rem;
   width: 100%;
   height: 100%;
 }
@@ -45,11 +38,25 @@ section {
   letter-spacing: 0.1em;
   line-height: 0.9;
 
-  background: url("/media/img/hero.jpg"); /* misma imagen */
-  background-size: cover;
-  background-position: center;
-
-  color: transparent;
+  color: var(--color-primary);
   -webkit-background-clip: text;
   background-clip: text;
+
+  max-width: 50rem;
+}
+
+.hero-content .subtitle {
+  color: var(--color-text);
+}
+
+.hero-img-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/media/img/hero-top-cutted.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
 }

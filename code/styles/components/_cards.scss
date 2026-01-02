@@ -31,8 +31,8 @@
 .card {
   background: linear-gradient(
     180deg,
-    var(--color-bg-darker),
-    var(--color-bg-lighter)
+    var(--color-bg-lighter),
+    var(--color-bg-darker)
   );
 
   border-radius: var(--border-radius);

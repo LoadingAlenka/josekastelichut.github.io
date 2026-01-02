@@ -28,12 +28,16 @@ a:hover {
 }
 
 :root {
-  /* Colors */
-  --color-bg: #10141f;
+  /* Colors dark */
+  /* --color-bg: #10141f;
   --color-bg-lighter: #202e37;
   --color-bg-darker: #090a14;
-  --color-text: #fbfff7;
-  --color-border: #c7cfcc;
+  --color-text: #fbfff7; */
+  /* Colors light */
+  --color-bg: #fbfff7;
+  --color-bg-lighter: #ffffff;
+  --color-bg-darker: #daddd6;
+  --color-text: #10141f;
   --color-primary: #75a743;
   --color-primary-lighter: #99ce65;
   --color-primary-darker: #619131;
@@ -345,7 +349,7 @@ button:active:not(:disabled) {
 
 /* cards normales */
 .card {
-  background: linear-gradient(180deg, var(--color-bg-darker), var(--color-bg-lighter));
+  background: linear-gradient(180deg, var(--color-bg-lighter), var(--color-bg-darker));
   border-radius: var(--border-radius);
   box-sizing: border-box;
   color: var(--color-text);
@@ -487,6 +491,9 @@ header {
   z-index: 100;
   transition: padding 0.3s ease, background-color 0.5s ease;
 }
+header * {
+  color: var(--color-bg);
+}
 header .logo {
   font-size: var(--fs-800);
   font-weight: bold;
@@ -591,7 +598,7 @@ section {
   position: relative;
   height: 35rem;
   /* fondo épico */
-  background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0.15) 100%), url("/media/img/hero.jpg"); /* 👈 cambiá la imagen */
+  background: url("/media/img/hero-cutted.jpg"); /* 👈 cambiá la imagen */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -604,7 +611,6 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.25rem;
   width: 100%;
   height: 100%;
 }
@@ -616,12 +622,26 @@ section {
   font-weight: 900;
   letter-spacing: 0.1em;
   line-height: 0.9;
-  background: url("/media/img/hero.jpg"); /* misma imagen */
-  background-size: cover;
-  background-position: center;
-  color: transparent;
+  color: var(--color-primary);
   -webkit-background-clip: text;
   background-clip: text;
+  max-width: 50rem;
+}
+
+.hero-content .subtitle {
+  color: var(--color-text);
+}
+
+.hero-img-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/media/img/hero-top-cutted.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
 }
 
 /*# sourceMappingURL=index.css.map */
