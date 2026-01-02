@@ -1,0 +1,47 @@
+{
+  "sections": [
+    {
+      "id": "the-hut",
+      "title": "El Refugio",
+      "cards": [
+        {
+          "title": "El Refugio Esloveno",
+          "text": "Refugio a 2.500 m sobre el nivel del mar. Ideal para trekking y aventuras.",
+          "button": "Ver el refugio",
+          "img": "/media/img/hut-lateral-view.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "activities",
+      "title": "Actividades",
+      "cards": [
+        {
+          "title": "Senderismo",
+          "text": "Múltiples rutas de senderismo te harán alucinar con los paisajes de la montaña y sentir que llegás a las nubes.",
+          "button": "Descubrir más"
+        },
+        {
+          "title": "Montañismo",
+          "text": "Escalá en las cercanías y preparate para el máximo reto: el Aconcagua.",
+          "button": "Descubrir más",
+          "img": "/media/img/hut-lateral-view.jpeg"
+        }
+      ]
+    },
+    {
+      "id": "arrival",
+      "title": "Arrivo",
+      "cards": [
+        {
+          "title": "Particular",
+          "text": "Llegar en vehículo propio es la forma más flexible..."
+        },
+        {
+          "title": "Contratar particular",
+          "text": "Existen servicios de traslado privado desde Mendoza y Uspallata..."
+        }
+      ]
+    }
+  ]
+}

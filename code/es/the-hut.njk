@@ -1,0 +1,12 @@
+---
+layout: layout.njk
+lang: es
+title: El Refugio
+description: Qué es el Refugio Esloveno "José Kastelic"
+---
+
+{% for section in es.refugio.sections %}
+  {% set currentSection = section %}
+  {% include "cards.njk" %}
+{% endfor %}
+

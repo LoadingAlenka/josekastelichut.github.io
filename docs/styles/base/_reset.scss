@@ -99,3 +99,8 @@ button {
   border: none;
   cursor: pointer;
 }
+
+/* 15. Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}

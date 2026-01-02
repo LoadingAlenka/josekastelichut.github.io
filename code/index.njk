@@ -1,0 +1,24 @@
+---
+permalink: /
+layout: null
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <script>
+    (function () {
+      const lang = navigator.language.slice(0, 2);
+      const supported = ["es", "en", "sl"];
+      const target = supported.includes(lang) ? lang : "es";
+      window.location.replace("/" + target + "/");
+    })();
+  </script>
+
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/es/">
+  </noscript>
+</head>
+<body></body>
+</html>

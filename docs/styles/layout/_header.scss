@@ -50,8 +50,10 @@ header {
 /* ESTADO SCROLL */
 header.shrink {
   padding: var(--friends) 0 var(--best-friends);
-  backdrop-filter: brightness(20%) blur(2px);
-  -webkit-backdrop-filter: brightness(20%) blur(2px);
+  /* backdrop-filter: brightness(20%) blur(2px);
+  -webkit-backdrop-filter: brightness(20%) blur(2px); */
+
+  background-color: var(--color-text);
 }
 
 header.shrink .logo {

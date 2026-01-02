@@ -13,7 +13,7 @@ button {
   max-width: 12rem;
   box-sizing: border-box;
   font-size: 0.9rem;
-  border: 0;
+  border: 0px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -26,7 +26,6 @@ button:not(:disabled):focus {
   outline: 0;
   border-top: 3px solid var(--color-primary-lighter);
   background-color: var(--color-primary-darker);
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.15);
 }
 
 button:disabled {

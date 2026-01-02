@@ -13,6 +13,7 @@
     />
   </head>
   <body>
+    {% include "loader.njk" %}
     {% include "lang-switcher.njk" %}
     <div class="page">
       {% include "header.njk" %}
@@ -21,6 +22,8 @@
 
       {% include "footer.njk"%}
       <script src="/js/main.js"></script>
+      <script src="/js/loader.js" defer></script>
+
       <script
         src="https://kit.fontawesome.com/b5144e464e.js"
         crossorigin="anonymous"
