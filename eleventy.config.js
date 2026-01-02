@@ -30,7 +30,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("code/es");
   eleventyConfig.addPassthroughCopy("code/sl");
   eleventyConfig.addPassthroughCopy("code/styles");
-  eleventyConfig.addPassthroughCopy(".nojekyll");
+  eleventyConfig.addPassthroughCopy("code/.nojekyll");
 
   //SASS
   eleventyConfig.addExtension("scss", {

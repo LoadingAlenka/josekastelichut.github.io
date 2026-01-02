@@ -1,0 +1,61 @@
+section {
+  display: flex;
+  flex-direction: column;
+  margin: var(--acquaintances);
+
+  align-items: center;
+}
+.hero {
+  margin: 0;
+  position: relative;
+  height: 35rem;
+
+  /* fondo épico */
+  background: url("/media/img/hero-cutted.jpg"); /* 👈 cambiá la imagen */
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* TEXTO RECORTADO */
+.hero-content h1 {
+  text-align: center;
+  font-size: clamp(3rem, 9vw, 4rem);
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  line-height: 0.9;
+
+  color: var(--color-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  max-width: 50rem;
+}
+
+.hero-content .subtitle {
+  color: var(--color-text);
+}
+
+.hero-img-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/media/img/hero-top-cutted.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+}

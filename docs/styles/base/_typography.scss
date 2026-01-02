@@ -1,0 +1,59 @@
+/* Heading */
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  letter-spacing: 0.1rem;
+}
+
+h1 {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+h2 {
+  text-align: center;
+  font-size: var(--fs-800);
+  text-transform: uppercase;
+  color: var(--color-text);
+  position: relative;
+}
+
+h3 {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+/* Body */
+
+p,
+* {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/* Supporting */
+
+.subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.caption {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+/* UI */
+
+button,
+input {
+  font-family: var(--font-sans);
+}

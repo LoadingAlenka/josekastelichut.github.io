@@ -1,0 +1,22 @@
+footer {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  .footer-top {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--color-bg-lighter);
+    padding: var(--friends);
+  }
+  .footer-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--color-bg-darker);
+    padding: var(--close-friends) var(--friends);
+  }
+}
